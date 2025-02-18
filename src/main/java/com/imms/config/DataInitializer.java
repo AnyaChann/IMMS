@@ -30,11 +30,13 @@
 //             Manufacturer manufacturer1 = new Manufacturer();
 //             manufacturer1.setName("Manufacturer 1");
 //             manufacturer1.setAddress("1234 Street, City, Country");
+//             manufacturer1.setStatus("Active");
 //             manufacturerRepository.save(manufacturer1);
 
 //             Manufacturer manufacturer2 = new Manufacturer();
 //             manufacturer2.setName("Manufacturer 2");
 //             manufacturer2.setAddress("5678 Avenue, City, Country");
+//             manufacturer2.setStatus("Active");
 //             manufacturerRepository.save(manufacturer2);
 
 //             // Add example products
@@ -43,6 +45,7 @@
 //             product1.setDescription("Description for Product 1");
 //             product1.setPrice(100.0);
 //             product1.setManufacturer(manufacturer1);
+//             product1.setStatus("Active");
 //             productRepository.save(product1);
 
 //             Product product2 = new Product();
@@ -50,6 +53,7 @@
 //             product2.setDescription("Description for Product 2");
 //             product2.setPrice(200.0);
 //             product2.setManufacturer(manufacturer2);
+//             product2.setStatus("Active");
 //             productRepository.save(product2);
 //         };
 //     }

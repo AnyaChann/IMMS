@@ -12,6 +12,7 @@ public class Product {
     private String name;
     private String description;
     private double price;
+    private String status; // Active or Inactive
 
     @DBRef
     private Manufacturer manufacturer;
@@ -48,6 +49,14 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public Manufacturer getManufacturer() {

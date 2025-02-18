@@ -1,12 +1,20 @@
 package com.imms.controller;
 
-import com.imms.model.Manufacturer;
-import com.imms.service.ManufacturerService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import com.imms.model.Manufacturer;
+import com.imms.service.ManufacturerService;
 
 @RestController
 @RequestMapping("/api/manufacturers")
@@ -39,7 +47,13 @@ public class ManufacturerController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteManufacturer(@PathVariable String id) {
-        manufacturerService.deleteManufacturer(id);
+        manufacturerService.deactivateManufacturer(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/{id}/deactivate")
+    public ResponseEntity<Void> deactivateManufacturer(@PathVariable String id) {
+        manufacturerService.deactivateManufacturer(id);
         return ResponseEntity.noContent().build();
     }
 }

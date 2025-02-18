@@ -16,6 +16,7 @@ public class ManufacturerService {
     private ManufacturerRepository manufacturerRepository;
 
     public Manufacturer addManufacturer(Manufacturer manufacturer) {
+        manufacturer.setStatus("Active");
         return manufacturerRepository.save(manufacturer);
     }
 
@@ -35,7 +36,10 @@ public class ManufacturerService {
         return manufacturerRepository.save(manufacturer);
     }
 
-    public void deleteManufacturer(String id) {
-        manufacturerRepository.deleteById(id);
+    public void deactivateManufacturer(String id) {
+        Manufacturer manufacturer = manufacturerRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
+        manufacturer.setStatus("Inactive");
+        manufacturerRepository.save(manufacturer);
     }
 }

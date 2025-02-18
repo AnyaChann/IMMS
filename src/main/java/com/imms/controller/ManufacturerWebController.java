@@ -51,9 +51,9 @@ public class ManufacturerWebController {
         return "redirect:/manufacturers";
     }
 
-    @PostMapping("/manufacturers/{id}/delete")
-    public String deleteManufacturer(@PathVariable("id") String id) {
-        manufacturerService.deleteManufacturer(id);
+    @PostMapping("/manufacturers/{id}/deactivate")
+    public String deactivateManufacturer(@PathVariable("id") String id) {
+        manufacturerService.deactivateManufacturer(id);
         return "redirect:/manufacturers";
     }
 }
