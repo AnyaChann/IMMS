@@ -24,11 +24,11 @@ public class ManufacturerService {
     }
 
     public Optional<Manufacturer> getManufacturerById(String id) {
-        return manufacturerRepository.findById(Long.parseLong(id));
+        return manufacturerRepository.findById(id);
     }
 
     public Manufacturer updateManufacturer(String id, Manufacturer manufacturerDetails) {
-        Manufacturer manufacturer = manufacturerRepository.findById(Long.parseLong(id))
+        Manufacturer manufacturer = manufacturerRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
         manufacturer.setName(manufacturerDetails.getName());
         manufacturer.setAddress(manufacturerDetails.getAddress());
@@ -36,6 +36,6 @@ public class ManufacturerService {
     }
 
     public void deleteManufacturer(String id) {
-        manufacturerRepository.deleteById(Long.parseLong(id));
+        manufacturerRepository.deleteById(id);
     }
 }

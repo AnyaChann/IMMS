@@ -1,0 +1,277 @@
+2025-02-19 00:50:25 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:50:25 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:50:25 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:50:25 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:50:25 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:50:25 - Finished Spring Data repository scanning in 12 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:50:25 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:50:25 - Starting service [Tomcat]
+2025-02-19 00:50:25 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:50:25 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:50:25 - Root WebApplicationContext: initialization completed in 312 ms
+2025-02-19 00:50:25 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:50:25 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1697300, minRoundTripTimeNanos=0}
+2025-02-19 00:50:25 - LiveReload server is running on port 35729
+2025-02-19 00:50:25 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:50:25 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:50:25 - Adding welcome page template: index
+2025-02-19 00:50:25 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:50:25 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:50:25 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:50:25 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:50:25 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:50:25 - Started ImmsApplication in 0.666 seconds (process running for 21512.654)
+2025-02-19 00:50:25 - Condition evaluation unchanged
+2025-02-19 00:51:08 - Restarting due to 18 class path changes (1 addition, 1 deletion, 16 modifications)
+2025-02-19 00:51:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:51:08 - Graceful shutdown complete
+2025-02-19 00:51:08 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:08 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:08 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:08 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.imms.ImmsApplication]
+2025-02-19 00:51:08 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.imms.ImmsApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.imms.ImmsApplication.main(ImmsApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'productWebController' for bean class [com.imms.service.ProductWebController] conflicts with existing, non-compatible bean definition of same name and class [com.imms.controller.ProductWebController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:171) ~[spring-context-6.2.2.jar:6.2.2]
+	... 16 common frames omitted
+2025-02-19 00:51:16 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:16 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:16 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:16 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.imms.ImmsApplication]
+2025-02-19 00:51:16 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.imms.ImmsApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:185) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.imms.ImmsApplication.main(ImmsApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'productWebController' for bean class [com.imms.service.ProductWebController] conflicts with existing, non-compatible bean definition of same name and class [com.imms.controller.ProductWebController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:171) ~[spring-context-6.2.2.jar:6.2.2]
+	... 16 common frames omitted
+2025-02-19 00:51:21 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:21 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:21 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:21 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:51:21 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:51:21 - Finished Spring Data repository scanning in 7 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:51:21 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:51:21 - Starting service [Tomcat]
+2025-02-19 00:51:21 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:51:21 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:51:21 - Root WebApplicationContext: initialization completed in 243 ms
+2025-02-19 00:51:21 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:51:21 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1382000, minRoundTripTimeNanos=0}
+2025-02-19 00:51:21 - LiveReload server is running on port 35729
+2025-02-19 00:51:22 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:51:22 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:51:22 - Adding welcome page template: index
+2025-02-19 00:51:22 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:51:22 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:51:22 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:51:22 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:51:22 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:51:22 - Started ImmsApplication in 0.447 seconds (process running for 21569.055)
+2025-02-19 00:51:22 - Condition evaluation unchanged
+2025-02-19 00:51:36 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:51:36 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:51:36 - Graceful shutdown complete
+2025-02-19 00:51:36 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:36 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:36 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:36 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:51:36 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:51:36 - Finished Spring Data repository scanning in 6 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:51:36 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:51:36 - Starting service [Tomcat]
+2025-02-19 00:51:36 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:51:36 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:51:36 - Root WebApplicationContext: initialization completed in 209 ms
+2025-02-19 00:51:36 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:51:36 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1205100, minRoundTripTimeNanos=0}
+2025-02-19 00:51:36 - LiveReload server is running on port 35729
+2025-02-19 00:51:37 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:51:37 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:51:37 - Adding welcome page template: index
+2025-02-19 00:51:37 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:51:37 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:51:37 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:51:37 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:51:37 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:51:37 - Started ImmsApplication in 0.358 seconds (process running for 21584.023)
+2025-02-19 00:51:37 - Condition evaluation unchanged
+2025-02-19 00:51:41 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:51:41 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:51:41 - Graceful shutdown complete
+2025-02-19 00:51:41 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:41 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:41 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:41 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:51:41 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:51:41 - Finished Spring Data repository scanning in 6 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:51:41 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:51:41 - Starting service [Tomcat]
+2025-02-19 00:51:41 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:51:41 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:51:41 - Root WebApplicationContext: initialization completed in 198 ms
+2025-02-19 00:51:41 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:51:41 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1301900, minRoundTripTimeNanos=0}
+2025-02-19 00:51:41 - LiveReload server is running on port 35729
+2025-02-19 00:51:41 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:51:41 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:51:41 - Adding welcome page template: index
+2025-02-19 00:51:41 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:51:41 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:51:41 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:51:41 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:51:41 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:51:41 - Started ImmsApplication in 0.341 seconds (process running for 21588.869)
+2025-02-19 00:51:41 - Condition evaluation unchanged
+2025-02-19 00:51:49 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:51:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:51:49 - Graceful shutdown complete
+2025-02-19 00:51:49 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:49 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:49 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:49 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:51:49 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:51:49 - Finished Spring Data repository scanning in 5 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:51:49 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:51:49 - Starting service [Tomcat]
+2025-02-19 00:51:49 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:51:49 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:51:49 - Root WebApplicationContext: initialization completed in 187 ms
+2025-02-19 00:51:49 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:51:49 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1073600, minRoundTripTimeNanos=0}
+2025-02-19 00:51:49 - LiveReload server is running on port 35729
+2025-02-19 00:51:49 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:51:49 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:51:49 - Adding welcome page template: index
+2025-02-19 00:51:49 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:51:49 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:51:49 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:51:49 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:51:49 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:51:49 - Started ImmsApplication in 0.339 seconds (process running for 21596.741)
+2025-02-19 00:51:49 - Condition evaluation unchanged
+2025-02-19 00:51:57 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:51:57 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:51:57 - Graceful shutdown complete
+2025-02-19 00:51:57 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:51:57 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:51:57 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:51:57 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:51:57 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:51:57 - Finished Spring Data repository scanning in 9 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:51:57 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:51:57 - Starting service [Tomcat]
+2025-02-19 00:51:57 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:51:57 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:51:57 - Root WebApplicationContext: initialization completed in 290 ms
+2025-02-19 00:51:57 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:51:57 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1101200, minRoundTripTimeNanos=0}
+2025-02-19 00:51:57 - LiveReload server is running on port 35729
+2025-02-19 00:51:57 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:51:57 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:51:57 - Adding welcome page template: index
+2025-02-19 00:51:57 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:51:57 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:51:57 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:51:57 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:51:57 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:51:57 - Started ImmsApplication in 0.496 seconds (process running for 21604.829)
+2025-02-19 00:51:57 - Condition evaluation unchanged
+2025-02-19 00:52:02 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:52:02 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:52:02 - Graceful shutdown complete
+2025-02-19 00:52:02 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:52:02 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:52:02 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:52:02 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:52:02 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:52:02 - Finished Spring Data repository scanning in 6 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:52:02 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:52:02 - Starting service [Tomcat]
+2025-02-19 00:52:02 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:52:02 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:52:02 - Root WebApplicationContext: initialization completed in 215 ms
+2025-02-19 00:52:02 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:52:02 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1320600, minRoundTripTimeNanos=0}
+2025-02-19 00:52:02 - LiveReload server is running on port 35729
+2025-02-19 00:52:02 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:52:02 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:52:02 - Adding welcome page template: index
+2025-02-19 00:52:02 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:52:02 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:52:02 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:52:02 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:52:02 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:52:02 - Started ImmsApplication in 0.35 seconds (process running for 21609.681)
+2025-02-19 00:52:02 - Condition evaluation unchanged
+2025-02-19 00:52:04 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-02-19 00:52:04 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-19 00:52:04 - Graceful shutdown complete
+2025-02-19 00:52:04 - Starting ImmsApplication using Java 23.0.1 with PID 26108 (P:\Semester4\Spring Boot\IMMS\target\classes started by Bach CT in P:\Semester4\Spring Boot\IMMS)
+2025-02-19 00:52:04 - Running with Spring Boot v3.4.2, Spring v6.2.2
+2025-02-19 00:52:04 - No active profile set, falling back to 1 default profile: "default"
+2025-02-19 00:52:04 - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-19 00:52:04 - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-19 00:52:04 - Finished Spring Data repository scanning in 6 ms. Found 3 MongoDB repository interfaces.
+2025-02-19 00:52:04 - Tomcat initialized with port 8080 (http)
+2025-02-19 00:52:04 - Starting service [Tomcat]
+2025-02-19 00:52:04 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-02-19 00:52:04 - Initializing Spring embedded WebApplicationContext
+2025-02-19 00:52:04 - Root WebApplicationContext: initialization completed in 235 ms
+2025-02-19 00:52:04 - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.2.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/23.0.1+11-39"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7db7fccd, com.mongodb.Jep395RecordCodecProvider@354bd6, com.mongodb.KotlinCodecProvider@46edb256]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2025-02-19 00:52:04 - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2656100, minRoundTripTimeNanos=0}
+2025-02-19 00:52:04 - LiveReload server is running on port 35729
+2025-02-19 00:52:04 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-02-19 00:52:04 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-02-19 00:52:04 - Adding welcome page template: index
+2025-02-19 00:52:04 - 24 mappings in 'requestMappingHandlerMapping'
+2025-02-19 00:52:04 - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-19 00:52:04 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-19 00:52:04 - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-19 00:52:04 - Tomcat started on port 8080 (http) with context path '/'
+2025-02-19 00:52:04 - Started ImmsApplication in 0.394 seconds (process running for 21611.55)
+2025-02-19 00:52:04 - Condition evaluation unchanged

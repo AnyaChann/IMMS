@@ -24,13 +24,11 @@ public class ProductService {
     }
 
     public Optional<Product> getProductById(String id) {
-        Long productId = Long.parseLong(id);
-        return productRepository.findById(productId);
+        return productRepository.findById(id);
     }
 
     public Product updateProduct(String id, Product productDetails) {
-        Long productId = Long.parseLong(id);
-        Product product = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("Product not found"));
+        Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
         product.setName(productDetails.getName());
         product.setDescription(productDetails.getDescription());
         product.setPrice(productDetails.getPrice());
@@ -39,7 +37,6 @@ public class ProductService {
     }
 
     public void deleteProduct(String id) {
-        Long productId = Long.parseLong(id);
-        productRepository.deleteById(productId);
+        productRepository.deleteById(id);
     }
 }

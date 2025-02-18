@@ -9,23 +9,34 @@
 <body>
     <div class="container">
         <h1 class="mt-5">Products</h1>
+        <a href="/products/new" class="btn btn-success mb-3">Add New Product</a>
         <table class="table table-striped mt-3">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>#</th>
+                    <!-- <th>ID</th> -->
                     <th>Name</th>
                     <th>Description</th>
                     <th>Price</th>
                     <th>Manufacturer</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                <tr th:each="product : ${products}">
-                    <td th:text="${product.id}"></td>
+                <tr th:each="product, iterStat : ${products}">
+                    <td th:text="${iterStat.index + 1}"></td>
+                    <!-- <td th:text="${product.id}"></td> -->
                     <td th:text="${product.name}"></td>
                     <td th:text="${product.description}"></td>
                     <td th:text="${product.price}"></td>
                     <td th:text="${product.manufacturer != null ? product.manufacturer.name : 'N/A'}"></td>
+                    <td>
+                        <a th:href="@{/products/{id}(id=${product.id})}" class="btn btn-primary">Edit</a>
+                        <form th:action="@{/products/{id}(id=${product.id})}" method="post" style="display:inline;">
+                            <input type="hidden" name="_method" value="delete"/>
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             </tbody>
         </table>
