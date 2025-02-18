@@ -47,13 +47,19 @@ public class ManufacturerController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteManufacturer(@PathVariable String id) {
-        manufacturerService.deactivateManufacturer(id);
+        manufacturerService.deleteManufacturer(id);
         return ResponseEntity.noContent().build();
     }
 
     @PostMapping("/{id}/deactivate")
     public ResponseEntity<Void> deactivateManufacturer(@PathVariable String id) {
         manufacturerService.deactivateManufacturer(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/{id}/reactivate")
+    public ResponseEntity<Void> reactivateManufacturer(@PathVariable String id) {
+        manufacturerService.reactivateManufacturer(id);
         return ResponseEntity.noContent().build();
     }
 }

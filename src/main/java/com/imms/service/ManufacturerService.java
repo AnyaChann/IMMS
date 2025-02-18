@@ -42,4 +42,17 @@ public class ManufacturerService {
         manufacturer.setStatus("Inactive");
         manufacturerRepository.save(manufacturer);
     }
+
+    public void reactivateManufacturer(String id) {
+        Manufacturer manufacturer = manufacturerRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
+        manufacturer.setStatus("Active");
+        manufacturerRepository.save(manufacturer);
+    }
+
+    public void deleteManufacturer(String id) {
+        Manufacturer manufacturer = manufacturerRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
+        manufacturerRepository.delete(manufacturer);
+    }
 }

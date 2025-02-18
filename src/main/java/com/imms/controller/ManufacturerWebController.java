@@ -40,7 +40,7 @@ public class ManufacturerWebController {
 
     @GetMapping("/manufacturers/{id}")
     public String editManufacturerForm(@PathVariable("id") String id, Model model) {
-        Manufacturer manufacturer = manufacturerService.getManufacturerById(id).orElseThrow(() -> new RuntimeException("Manufacturer not found"));
+        Manufacturer manufacturer = manufacturerService.getManufacturerById(id).orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
         model.addAttribute("manufacturer", manufacturer);
         return "manufacturer-form";
     }
@@ -54,6 +54,18 @@ public class ManufacturerWebController {
     @PostMapping("/manufacturers/{id}/deactivate")
     public String deactivateManufacturer(@PathVariable("id") String id) {
         manufacturerService.deactivateManufacturer(id);
+        return "redirect:/manufacturers";
+    }
+
+    @PostMapping("/manufacturers/{id}/reactivate")
+    public String reactivateManufacturer(@PathVariable("id") String id) {
+        manufacturerService.reactivateManufacturer(id);
+        return "redirect:/manufacturers";
+    }
+
+    @PostMapping("/manufacturers/{id}/delete")
+    public String deleteManufacturer(@PathVariable("id") String id) {
+        manufacturerService.deleteManufacturer(id);
         return "redirect:/manufacturers";
     }
 }

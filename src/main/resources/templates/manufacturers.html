@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manufacturers</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .btn-gray {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5">Manufacturers</h1>
-        <a href="/" class="btn btn-primary">Go to Home</a>
-        <a href="/manufacturers/new" class="btn btn-success">Add New Manufacturer</a>
-        <table class="table table-striped mt-3">
-            <thead>
+        <h1 class="text-center">Manufacturers</h1>
+        <div class="text-center mb-4">
+            <a href="/" class="btn btn-primary">Go to Home</a>
+            <a href="/manufacturers/new" class="btn btn-success">Add New Manufacturer</a>
+        </div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
                 <tr>
                     <th>#</th>
                     <th>Name</th>
@@ -28,9 +45,15 @@
                     <td th:text="${manufacturer.address}"></td>
                     <td th:text="${manufacturer.status}"></td>
                     <td>
-                        <a th:href="@{/manufacturers/{id}(id=${manufacturer.id})}" class="btn btn-primary">Edit</a>
-                        <form th:action="@{/manufacturers/{id}/deactivate(id=${manufacturer.id})}" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger">Deactivate</button>
+                        <a th:href="@{/manufacturers/{id}(id=${manufacturer.id})}" class="btn btn-primary btn-sm">Edit</a>
+                        <form th:action="@{/manufacturers/{id}/deactivate(id=${manufacturer.id})}" method="post" style="display:inline;" th:if="${manufacturer.status == 'Active'}" onsubmit="return confirm('Are you sure you want to deactivate this manufacturer?');">
+                            <button type="submit" class="btn btn-danger btn-sm">Deactivate</button>
+                        </form>
+                        <form th:action="@{/manufacturers/{id}/reactivate(id=${manufacturer.id})}" method="post" style="display:inline;" th:if="${manufacturer.status == 'Inactive'}" onsubmit="return confirm('Are you sure you want to reactivate this manufacturer?');">
+                            <button type="submit" class="btn btn-success btn-sm">Reactivate</button>
+                        </form>
+                        <form th:action="@{/manufacturers/{id}/delete(id=${manufacturer.id})}" method="post" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this manufacturer?');">
+                            <button type="submit" class="btn btn-gray btn-sm">Delete</button>
                         </form>
                     </td>
                 </tr>

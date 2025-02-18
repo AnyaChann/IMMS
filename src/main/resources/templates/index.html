@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory & Manufacturer Management System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .admin-menu {
+            margin-top: 50px;
+        }
+        .admin-menu h1 {
+            margin-bottom: 30px;
+        }
+        .admin-menu .card {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-5">Welcome to the Inventory & Manufacturer Management System</h1>
-        <p class="lead">Manage your products and manufacturers efficiently.</p>
+    <div class="container admin-menu">
+        <h1 class="text-center">Inventory & Manufacturer Management System</h1>
+        <p class="lead text-center">Manage your products and manufacturers efficiently.</p>
         
-        <div class="mt-4">
-            <h2>Products</h2>
-            <a th:href="@{/products}" class="btn btn-primary">View Products</a>
-        </div>
-
-        <div class="mt-4">
-            <h2>Manufacturers</h2>
-            <a th:href="@{/manufacturers}" class="btn btn-primary">View Manufacturers</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Products</h2>
+                        <p class="card-text">View and manage your products.</p>
+                        <a th:href="@{/products}" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Manufacturers</h2>
+                        <p class="card-text">View and manage your manufacturers.</p>
+                        <a th:href="@{/manufacturers}" class="btn btn-primary">View Manufacturers</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

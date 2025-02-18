@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manufacturer Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5" th:text="${manufacturer.id == null ? 'Create Manufacturer' : 'Edit Manufacturer'}"></h1>
+        <h1 class="text-center" th:text="${manufacturer.id == null ? 'Create Manufacturer' : 'Edit Manufacturer'}"></h1>
         <form th:action="@{${manufacturer.id == null ? '/manufacturers' : '/manufacturers/' + manufacturer.id}}" th:object="${manufacturer}" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -18,7 +32,10 @@
                 <label for="address">Address</label>
                 <input type="text" class="form-control" id="address" th:field="*{address}" placeholder="Enter manufacturer address">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="/manufacturers" class="btn btn-secondary ml-2">Discard Changes</a>
+            </div>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
