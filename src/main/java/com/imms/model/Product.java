@@ -1,23 +1,22 @@
 package com.imms.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
 @Document(collection = "products")
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String name;
     private String description;
     private double price;
-    private Manufacturer manufacturerId;
+
+    @DBRef
+    private Manufacturer manufacturer;
+
+    // Getters and setters
 
     public String getId() {
         return id;
@@ -51,11 +50,11 @@ public class Product {
         this.price = price;
     }
 
-    public Manufacturer getManufacturerId() {
-        return manufacturerId;
+    public Manufacturer getManufacturer() {
+        return manufacturer;
     }
 
-    public void setManufacturerId(Manufacturer manufacturer1) {
-        this.manufacturerId = manufacturer1;
+    public void setManufacturer(Manufacturer manufacturer) {
+        this.manufacturer = manufacturer;
     }
 }

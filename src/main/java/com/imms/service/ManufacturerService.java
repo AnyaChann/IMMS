@@ -1,12 +1,13 @@
 package com.imms.service;
 
-import com.imms.model.Manufacturer;
-import com.imms.repository.ManufacturerRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.imms.model.Manufacturer;
+import com.imms.repository.ManufacturerRepository;
 
 @Service
 public class ManufacturerService {
@@ -22,19 +23,19 @@ public class ManufacturerService {
         return manufacturerRepository.findAll();
     }
 
-    public Optional<Manufacturer> getManufacturerById(Long id) {
-        return manufacturerRepository.findById(id);
+    public Optional<Manufacturer> getManufacturerById(String id) {
+        return manufacturerRepository.findById(Long.parseLong(id));
     }
 
-    public Manufacturer updateManufacturer(Long id, Manufacturer manufacturerDetails) {
-        Manufacturer manufacturer = manufacturerRepository.findById(id)
+    public Manufacturer updateManufacturer(String id, Manufacturer manufacturerDetails) {
+        Manufacturer manufacturer = manufacturerRepository.findById(Long.parseLong(id))
                 .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
         manufacturer.setName(manufacturerDetails.getName());
         manufacturer.setAddress(manufacturerDetails.getAddress());
         return manufacturerRepository.save(manufacturer);
     }
 
-    public void deleteManufacturer(Long id) {
-        manufacturerRepository.deleteById(id);
+    public void deleteManufacturer(String id) {
+        manufacturerRepository.deleteById(Long.parseLong(id));
     }
 }

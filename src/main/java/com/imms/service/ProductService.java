@@ -1,12 +1,13 @@
 package com.imms.service;
 
-import com.imms.model.Product;
-import com.imms.repository.ProductRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.imms.model.Product;
+import com.imms.repository.ProductRepository;
 
 @Service
 public class ProductService {
@@ -22,20 +23,23 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Optional<Product> getProductById(Long id) {
-        return productRepository.findById(id);
+    public Optional<Product> getProductById(String id) {
+        Long productId = Long.parseLong(id);
+        return productRepository.findById(productId);
     }
 
-    public Product updateProduct(Long id, Product productDetails) {
-        Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
+    public Product updateProduct(String id, Product productDetails) {
+        Long productId = Long.parseLong(id);
+        Product product = productRepository.findById(productId).orElseThrow(() -> new RuntimeException("Product not found"));
         product.setName(productDetails.getName());
         product.setDescription(productDetails.getDescription());
         product.setPrice(productDetails.getPrice());
-        product.setManufacturerId(productDetails.getManufacturerId());
+        product.setManufacturer(productDetails.getManufacturer());
         return productRepository.save(product);
     }
 
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
+    public void deleteProduct(String id) {
+        Long productId = Long.parseLong(id);
+        productRepository.deleteById(productId);
     }
 }
