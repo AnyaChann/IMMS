@@ -24,7 +24,11 @@
     <div class="container admin-menu">
         <h1 class="text-center">Inventory & Manufacturer Management System</h1>
         <p class="lead text-center">Manage your products and manufacturers efficiently.</p>
-        
+        <div class="text-center mb-4">
+            <p>Welcome, <span th:text="${username}"></span>!</p>
+            <p>Your roles: <span th:each="role : ${roles}" th:text="${role}"></span></p>
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">

@@ -33,7 +33,7 @@ public class ProductWebController {
     @GetMapping("/products/new")
     public String createProductForm(Model model) {
         model.addAttribute("product", new Product());
-        model.addAttribute("manufacturers", manufacturerService.getAllManufacturers());
+        model.addAttribute("manufacturers", manufacturerService.getActiveManufacturers());
         return "product-form";
     }
 
@@ -47,7 +47,7 @@ public class ProductWebController {
     public String editProductForm(@PathVariable("id") String id, Model model) {
         Product product = productService.getProductById(id).orElseThrow(() -> new RuntimeException("Product not found"));
         model.addAttribute("product", product);
-        model.addAttribute("manufacturers", manufacturerService.getAllManufacturers());
+        model.addAttribute("manufacturers", manufacturerService.getActiveManufacturers());
         return "product-form";
     }
 

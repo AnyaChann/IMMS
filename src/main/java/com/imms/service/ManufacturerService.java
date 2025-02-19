@@ -55,4 +55,8 @@ public class ManufacturerService {
                 .orElseThrow(() -> new RuntimeException("Manufacturer not found with id " + id));
         manufacturerRepository.delete(manufacturer);
     }
+
+    public List<Manufacturer> getActiveManufacturers() {
+        return manufacturerRepository.findByStatus("Active");
+    }
 }
