@@ -3,11 +3,14 @@ package com.imms.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import jakarta.persistence.Column;
+
 @Document(collection = "manufacturers")
 public class Manufacturer {
 
     @Id
     private String id;
+    @Column(nullable = false, length = 100)
     private String name;
     private String address;
     private String status; // Active or Inactive
